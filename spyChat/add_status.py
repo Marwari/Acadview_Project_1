@@ -1,4 +1,4 @@
-# import statements.
+# importing
 from globals import STATUS_MESSAGES
 
 # updated status message.

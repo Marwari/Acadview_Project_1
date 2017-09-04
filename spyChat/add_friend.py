@@ -1,4 +1,4 @@
-# import statements.
+# importing.
 from globals import friends
 
 # add new friends.
@@ -12,7 +12,7 @@ def add_friend():
         'chats': []
     }
     new_friend['name'] = raw_input("Please add your friend's name: ")
-    new_friend['salutation']= raw_input("Are they Mr. or Ms.?: ")
+    new_friend['salutation']= raw_input("What to call Mr. or Ms.?: ")
 
     # concatination.
     new_friend['name'] = new_friend['salutation'] + " " + new_friend['name']
