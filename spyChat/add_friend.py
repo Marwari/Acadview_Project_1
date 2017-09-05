@@ -14,7 +14,7 @@ def add_friend():
     new_friend['name'] = raw_input("Please add your friend's name: ")
     new_friend['salutation']= raw_input("What to call Mr. or Ms.?: ")
 
-    # concatination.
+    # concatination...
     new_friend['name'] = new_friend['salutation'] + " " + new_friend['name']
 
     new_friend['age'] = int(raw_input("Age? "))
@@ -30,3 +30,4 @@ def add_friend():
 
     # returning total no of friends.
     return len(friends)
+
