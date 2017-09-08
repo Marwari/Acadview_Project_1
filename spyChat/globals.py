@@ -1,8 +1,3 @@
-# current status message is initialized to None.
-current_status_message = None
 
-# list to store status messages.
-STATUS_MESSAGES = ['My name is Bond, James Bond', 'Shaken, not stirred.', 'Keeping the British end up, Sir']
-
-# lists to store users friends information.
-friends = []
+# list of default status
+STATUS_MESSAGES = ['My name is Chaudhary, Bharat Chaudhary.', 'I believe in me only.', 'Only me, Sir Ji!']
