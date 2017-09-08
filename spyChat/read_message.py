@@ -40,6 +40,7 @@ def read_message():
         if "SOS" in new or "SAVE" in new or "HELP" in new or "ACCIDENT" in new or "ALERT" in new:
 
             # Emergency alert
+            # Termcolor and Colorama both libraries happily used.
             print (colored("!", 'grey', 'on_yellow')),
             print (colored("!", 'grey', 'on_yellow')),
             print (colored("!", 'grey', 'on_yellow'))

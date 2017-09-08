@@ -7,12 +7,8 @@ from spy_details import friends, ChatMessage
 #importing regular expression for proper validation
 import re
 
-# importing termcolor and colorama for colorful output.
+# importing termcolor for colorful output.
 from termcolor import colored
-from colorama import init
-
-#initializing colorama
-init()
 
 # function to send a secret message.
 def send_message():

@@ -3,12 +3,8 @@ from spy_details import friends
 
 #from globals import friends
 
-# importing termcolor and colorama
+# importing termcolor for colorful output
 from termcolor import colored
-from colorama import init
-
-#initializing colorama
-init()
 
 # function to select friend from friend list.
 def select_friend():

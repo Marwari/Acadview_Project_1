@@ -2,12 +2,8 @@
 from spy_details import spy
 from globals import STATUS_MESSAGES
 
-# importing termcolor and colorama for colorful output
+# importing termcolor colorful output
 from termcolor import colored
-from colorama import init
-
-# initializing colorama
-init()
 
 # function to add status
 def add_status(current_status_message):

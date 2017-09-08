@@ -3,12 +3,8 @@ from spy_details import Spy, friends
 # importing regular expressions for proper validation
 import re
 
-# importing termcolor and colorama for colorful output
+# importing termcolor for colorful output
 from termcolor import colored
-from colorama import init
-
-#initializing colorama
-init()
 
 # function to add new friends.
 def add_friend():

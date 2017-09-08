@@ -2,12 +2,8 @@
 from spy_details import spy
 from start_chat import  start_chat
 
-#Importing termcolor and colorama to get output colorful
-from colorama import init
+#Importing termcolor to get output colorful
 from termcolor import colored
-
-#Initializing the colorama
-init()
 
 #Start greeting
 print (colored("\nHello!, Bro.","blue"))

@@ -7,12 +7,8 @@ from read_message import read_message
 from read_chat_history import read_chat_history
 
 
-# importing termcolor an colorama for colorful output
+# importing termcolor for colorful output
 from termcolor import colored
-from colorama import init
-
-#initializing colorama
-init()
 
 # start_chat() function definition.
 def start_chat(name, age, rating, status):

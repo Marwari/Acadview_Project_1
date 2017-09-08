@@ -2,12 +2,8 @@
 from select_friend import select_friend
 from spy_details import friends
 
-#importing termcolor and colorama for colorful output.
+#importing termcolor for colorful output.
 from termcolor import colored
-from colorama import init
-
-#initializing colorama
-init()
 
 # function to read chat history
 def read_chat_history():
