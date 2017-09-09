@@ -13,7 +13,7 @@ def read_chat_history():
 
     for chat in friends[read_chat].chats:
         # message is sent by me
-        if chat.sent_by_me:
+        if (chat.sent_by_me != False) :
             # the date and time with yellow color
             print (colored(str(chat.time.strftime("%d %B %Y %A %H:%M"))+ ", ", 'yellow')),
             # the message is printed in red

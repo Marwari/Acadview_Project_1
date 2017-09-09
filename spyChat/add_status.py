@@ -1,6 +1,6 @@
 # importing spy details and default or/and older status
 from spy_details import spy
-from globals import STATUS_MESSAGES
+from globals import STATUS_MESSAGES, current_status_message
 
 # importing termcolor colorful output
 from termcolor import colored
@@ -12,7 +12,7 @@ def add_status(current_status_message):
     updated_status_message = None
 
     # check if current status is set or not
-    if spy.current_status_message != None:
+    if current_status_message != None:
         print 'Your current status message is %s \n' % (current_status_message)
     else:
         print 'You don\'t have any status message currently \n'

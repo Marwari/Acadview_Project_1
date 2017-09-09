@@ -8,7 +8,7 @@ def send_message_help():
     friends_choice = select_friend()
 
     # send the helping text message to the friend in emergency.
-    text = "Bro. I'm comming to save you. Don't worry. "
+    text = "Bro. I'm coming to save you. Don't worry. "
 
     # the message will be added to chat message class
     new_chat = ChatMessage(text, True)

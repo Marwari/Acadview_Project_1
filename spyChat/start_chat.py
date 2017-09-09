@@ -13,8 +13,6 @@ from termcolor import colored
 # start_chat() function definition.
 def start_chat(name, age, rating, status):
     from globals import current_status_message
-    # validating users details.
-    error_message = None # variable for storing error messages.
 
     # age should be greater than 12 and less than 50.
     if not (age > 12 and age < 50) :

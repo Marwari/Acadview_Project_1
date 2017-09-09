@@ -45,22 +45,16 @@ def read_message():
             print (colored("!", 'grey', 'on_yellow')),
             print (colored("!", 'grey', 'on_yellow'))
 
-        # help friend by sending a helping message
-        print (colored("The friend who sent this message need your help.", 'cyan'))
-        print (colored("You can help your friend by sending helping message.", 'cyan'))
-        print (colored("Select the friend to send helping message", 'red'))
+            # help friend by sending a helping message
+            print (colored("The friend who sent this message need your help.", 'cyan'))
+            print (colored("You can help your friend by sending helping message.", 'cyan'))
+            print (colored("Select the friend to send helping message", 'red'))
 
         # calling the send message help function
         send_message_help()
 
         # the message has been sent successfully
         print (colored("You just sent a message to help your friend.", 'magenta'))
-
-        # add the chat to sender
-        new_chat = ChatMessage(secret_message, False)
-        friends[sender].chats.append(new_chat)
-
-        # if there is no emergency text in message.
 
         # add the chat to sender
         new_chat = ChatMessage(secret_message, False)
