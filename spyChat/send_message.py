@@ -19,10 +19,22 @@ def send_message():
     # select an image in which you want to hide a secret message.
     original_image = raw_input("Provide the name of the image to hide the message : ")
     pattern_i = '^[a-zA-Z]+\.jpg$'
+    # User validation for image files.
+    if(re.match(pattern_i,original_image)!=None):
+        print # Do Nothing here
+    else:
+        # Provide suggestions to user
+        print colored("Please provide (.jpg) image type.","red")
 
     # name the output file
     output_image = raw_input("Provide the name of the output image  : ")
     pattern_o = '^[a-zA-Z]+\.jpg$'
+    # User validation for image files.
+    if (re.match(pattern_o,output_image) != None):
+        print # Do Nothing here
+    else:
+        # Provide suggestion to user.
+        print colored("We can extract in only (.jpg) image type, please go for (.jpg).","red")
 
     # write the secret message
     text = raw_input("Enter your message here : ")
@@ -38,23 +50,6 @@ def send_message():
     # Successful message after encoding
     print (colored("Your message encrypted successfully.", 'red'))
 
-    # save the messages
-    new_chat = {
-        'message': text,
-        'time': datetime.now(),
-        'sent_by_me': True
-    }
-
     # name of the friend along which we add message.
     friends[friend_choice].chats.append(new_chat)
     print (colored("your secret message is ready.",'yellow'))
-
-    # users input validations
-    if (re.match(pattern_i, original_image) != None and re.match(pattern_o, output_image) != None):
-        print (colored('All perfect','red'))
-    else:
-        print (colored('Sorry! Invalid entry. We can\'t validate your input and output\n ', 'blue'))
-        print (colored('The convention to follow is: \n ', 'blue'))
-        print (colored('1. Input should ends with (.jpg) format.\n ', 'blue'))
-        print (colored('2. Output should also ends with (.jpg) format.\n ', 'blue'))
-        print (colored('Keep in mind and Try Again\n\n ', 'blue'))
