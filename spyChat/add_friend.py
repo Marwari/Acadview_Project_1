@@ -24,6 +24,7 @@ def add_friend():
 
     new_friend.salutation= raw_input("What to call Mr. or Ms.?: ")
     pattern_s = '^[a-zA-Z\s]+$'
+    # user validation
     if(len(new_friend.salutation) >0 and re.match(pattern_s,new_friend.salutation) != None):
         if(len(new_friend.salutation)>5):
             print colored("Your salutation is too big.", "red")
@@ -37,28 +38,26 @@ def add_friend():
 
     # ask for age of friend
     new_friend.age = (raw_input("Age? "))
-    if(new_friend.age.isdigit() == True):
-        pattern_a = '^[0-9]+$'
-        if(re.match(pattern_a,new_friend.age)!=None):
-            if(12 < new_friend.age < 50):
-             True
-            else:
-             print colored("Age should be in beetween 12 to 50", 'red')
+    pattern_a = '^[0-9]+$'
+    # user validation
+    if(re.match(pattern_a,new_friend.age)!=None):
+        if(12 < new_friend.age < 50):
+            True
         else:
-            print colored("Age should be Numeric", 'red')
-
+            print colored("Age should be in beetween 12 to 50", 'red')
     else:
         print colored("Age should be Numeric.", "red")
         return add_friend()
 
     #ask for rating of friend, float represents type casting in float
     new_friend.rating = (raw_input("Spy rating? "))
+    # user validation.
     pattern_r = '^[0-9]+\.[0-9]+$'
     if(re.match(pattern_r,new_friend.rating)!= None):
         if (new_friend.rating>0.0):
             True
         else:
-            print "Ratting should be more than 0"
+            print "Ratting should be more than 0.0"
     else:
         print colored("Ratting should be Numeric or Decimal.", "red")
         return add_friend()
